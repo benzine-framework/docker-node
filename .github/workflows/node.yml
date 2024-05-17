@@ -58,7 +58,7 @@ jobs:
           username: matthewbaggett
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: docker/build-push-action@v3
+      - uses: docker/build-push-action@v5
         name: Build & Push
         with:
           context: .
