@@ -62,7 +62,6 @@ jobs:
         name: Build & Push
         with:
           context: .
-          file: node/Dockerfile
           target: nodejs
           platforms: linux/amd64,linux/arm64
           pull: true
