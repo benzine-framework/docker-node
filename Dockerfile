@@ -8,7 +8,7 @@ ARG NODE_VERSION
 ARG YARN_VERSION
 ARG PATH="/app/node_modules/.bin:${PATH}"
 
-SHELL ["/bin/bash", "-o", "pipefail", "-c"]
+SHELL ["/bin/bash", "-o", "pipefail", "--login", "-c"]
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
 RUN nvm list
 RUN nvm install ${NODE_VERSION} && \
